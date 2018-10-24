@@ -10,7 +10,7 @@ public class Imperatives {
   considered acceptable. Otherwise it is not acceptable. The truth values should be read as:
   (True) it is morally acceptable or (False) it is morally acceptable.*/
   
-  public Boolean UniversalLaw (Boolean situation, String action) {
+  public Boolean UniversalLaw (Boolean situation) {
     char[] expectations = new char[100];
     for(int i = 0; i < 100; ++i) {
       if(char[i] == 'y' || char[i] == 'Y')

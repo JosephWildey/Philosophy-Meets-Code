@@ -38,7 +38,7 @@ public class Imperatives {
   
   /*This is an infinite loop that does your thing in the above scenario regardless
   of scenario.*/
-  public String Categorical Imperative() {
+  public String CategoricalImperative() {
     do {
       return chosenAction();
       } while(true);

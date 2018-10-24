@@ -30,6 +30,7 @@ public Class HumeSort {
     String array2 = "";
     String array3 = "";
     String array4 = "";
+    String array5 = "";
     int size, usrChoices, runningCount, nums;
     String quit = "";
     String numInput = "";
@@ -80,6 +81,25 @@ public Class HumeSort {
                 nums = Integer.parseInt(quit);
             }
         }
+    }
+
+    /*This will iterate through array1 and store the occurrences of each unique
+    value in a given spot in a different array. In the case that values are not
+    the same as expected, we will set aside unique values that may disrupt what
+    we previous believed is true. If it turns out we have been wrong all along
+    we can simply copy the old array up to that point, insert the new item,
+    and then shift all the values +1 towards the end. However, we can also keep an array of matching
+    values that we can skip over in future iterations as well.*/
+    public static void analyzeInformation() {
+        //do stuf
+    }
+
+    /*This will take in the previously collected information
+    and sort the array based on that information. In the case
+    where there is a jump in values, we will assume overall order
+    is universal. */
+    public static void sort() {
+        //dostuf
     }
 
     //Because this is Java.

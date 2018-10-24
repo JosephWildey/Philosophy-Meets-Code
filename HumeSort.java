@@ -31,7 +31,7 @@ public Class HumeSort {
     String array3 = "";
     String array4 = "";
     String array5 = "";
-    String element, element2, element3, tempElement;;
+    String element, element2, element3, tempElement, element4;
     int size, usrChoices, runningCount, nums;
     String quit = "";
     String numInput = "";
@@ -84,6 +84,20 @@ public Class HumeSort {
         }
     }
 
+    /*This will take in the previously collected information
+    and sort the array based on that information. In the case
+    where there is a jump in values, we will assume overall order
+    is universal. */
+    public static void sort(String ar1, String ar2) {
+        for(int i = 0; i < ar1.length; ++i) {
+            for(int j = 0; j < ar2.length; ++j) {
+                if(ar1[i].equals(ar2[j])) {
+                    ar1[i] = ar1[i];
+                }
+            }
+        }
+    }
+
     /*This will iterate through array1 and store the occurrences of each unique
     value in a given spot in a different array. In the case that values are not
     the same as expected, we will set aside unique values that may disrupt what
@@ -91,15 +105,7 @@ public Class HumeSort {
     we can simply copy the old array up to that point, insert the new item,
     and then shift all the values +1 towards the end. However, we can also keep an array of matching
     values that we can skip over in future iterations as well.*/
-    public static void analyzeInformation() {
-        //do stuf
-    }
-
-    /*This will take in the previously collected information
-    and sort the array based on that information. In the case
-    where there is a jump in values, we will assume overall order
-    is universal. */
-    public static void sort(String ar1, String ar2, String ar3) {
+    public static void analyzeInformation(String ar1, String ar2, String ar3) {
         int i = 0;
         int j = 0;
         String element = "";
@@ -107,17 +113,26 @@ public Class HumeSort {
                 element = ar1[i];
                 element2 = ar2[j];
                 element3 = ar3[i];
+                element4 = ar4[i];
             if(element.equals(element2) && !(element.equals(element3))) {
                 ++runningCount;
                 ar3[i] = element;
                 ++i;
             } if(!(element.equals(element2) && !(element.equals(element3)))) {
                 tempElement ar1[i];
+                ++runningCount;
+                /*Ideally I would copy the array and push it back but I'm running
+                /out of time.*/
+                    if(runningCount > element4[i]) {
+                        ar2[i] = tempElement;
+                        ar3[i] = tempElement;
+                    }
             }
              else {
                 ++i;
             }
             if(i == (ar1.length - 1)) {
+
                 ++j;
             }
         }

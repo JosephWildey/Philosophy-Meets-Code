@@ -22,6 +22,7 @@ public class Imperatives {
       return true;
       else
       return false;
+  }
   
   /*This would be your response in a given scenario.  */
   public String chosenAction() {

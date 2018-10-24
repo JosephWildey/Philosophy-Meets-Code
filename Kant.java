@@ -1,4 +1,6 @@
-/*This is just psuedocode detailing Kant's imperatives*/
+/*This is just psuedocode detailing Kant's imperatives.
+  However it resembles Java and may even compile in Java.
+  I haven't tried. I'm just having fun.*/
 
 public class Imperatives {
   

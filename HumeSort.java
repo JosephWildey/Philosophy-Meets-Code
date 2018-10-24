@@ -31,6 +31,7 @@ public Class HumeSort {
     String array3 = "";
     String array4 = "";
     String array5 = "";
+    String element, element2, element3, tempElement;;
     int size, usrChoices, runningCount, nums;
     String quit = "";
     String numInput = "";
@@ -98,8 +99,28 @@ public Class HumeSort {
     and sort the array based on that information. In the case
     where there is a jump in values, we will assume overall order
     is universal. */
-    public static void sort() {
-        //dostuf
+    public static void sort(String ar1, String ar2, String ar3) {
+        int i = 0;
+        int j = 0;
+        String element = "";
+        while(j < ar1.length) {
+                element = ar1[i];
+                element2 = ar2[j];
+                element3 = ar3[i];
+            if(element.equals(element2) && !(element.equals(element3))) {
+                ++runningCount;
+                ar3[i] = element;
+                ++i;
+            } if(!(element.equals(element2) && !(element.equals(element3)))) {
+                tempElement ar1[i];
+            }
+             else {
+                ++i;
+            }
+            if(i == (ar1.length - 1)) {
+                ++j;
+            }
+        }
     }
 
     //Because this is Java.

@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 /*David Hume was an epistemological philosopher who destroyed tons of
 philosophy prior to him. He was instrumental in the philosophy Kant developed.

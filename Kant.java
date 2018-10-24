@@ -29,10 +29,13 @@ public class Imperatives {
     return "someAction";
   }
   
-  /*This is saying if an event is occurring then trigger your response to the event. */
+  /*This is saying if an event is occurring then trigger your response to the event. 
+  Also, your response will be triggered as long as the event is occurring.*/
   public String HypotheticalImperative(Boolean predecent) {
     if(predecent == true) {
-      return chosenAction();
+      while(precedecnt == true) {
+        return chosenAction();
+      }
     }
   }
   

@@ -25,13 +25,13 @@ public class Imperatives {
   
   /*This would be your response in a given scenario.  */
   public String chosenAction() {
-    //do something
+    return "someAction";
   }
   
   /*This is saying if an event is occurring then trigger your response to the event. */
   public String HypotheticalImperative(Boolean predecent) {
     if(predecent == true) {
-      chosenAction();
+      return chosenAction();
     }
   }
   
@@ -39,7 +39,7 @@ public class Imperatives {
   of scenario.*/
   public String Categorical Imperative() {
     do {
-      chosenAction();
+      return chosenAction();
       } while(true);
    }
    

@@ -1,0 +1,7 @@
+/*This is how you get a five-number summary in R. There are a ton of really long youtube videos on the subject. I'll assume you know what they're for and stuff.
+Let x = our array of values */
+
+/* You can change the values within the parentheses. Those are the values you're working with. You can also get those values from a file and do all sorts of neat shit with R. Highly recommended.*/
+x <- c(81,53,37,27,18,14,54,15)
+sort(x)
+summary(x)

@@ -5,3 +5,5 @@ Let x = our array of values */
 x <- c(81,53,37,27,18,14,54,15)
 sort(x)
 summary(x)
+//If you want a boxplot:
+boxplot(x)

@@ -2,7 +2,8 @@
 Along the way it turned into something resembling Aristolean philosophy. I think
 there is now some Thomas Aquinas stuff in here too. */
 
-/*First, we establish the facts. I think, I am human, and I exist. We must also establish the fact that God exists now. */
+/*First, we establish the facts. I think, I am human, and I exist. We must also establish the fact that God exists now. 
+Also, for funsies capitalize "God" or "Me." */
 exist(me).
 exist(god).
 human(me).

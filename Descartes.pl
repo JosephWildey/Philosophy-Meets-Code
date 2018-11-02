@@ -1,5 +1,5 @@
 /*This was Descartes famous line, "I think therefore I am" expressed in Prolog. 
-Along the way it turned into something resembling Aristolean philosophy. I think
+Along the way it turned into something resembling St. Anselm's Ontological Argument. I think
 there is now some Thomas Aquinas stuff in here too. */
 
 /*First, we establish the facts. I think, I am human, and I exist. We must also establish the fact that God exists now. 

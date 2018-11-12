@@ -10,6 +10,7 @@ public class Utilitarianism {
 }
 
 //Bentham's calculus
+//Classes are basically just variables with methods (functions) and stuff
 class Bentham {
 
     /* These are the values we could not necessarily get from the user.

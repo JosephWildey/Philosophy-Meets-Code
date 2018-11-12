@@ -27,7 +27,7 @@ class Bentham {
 
 };
 
-class Mill {
+class Mill extends Bentham {
     /*This class would probably require a queue or
     BST to store hobbies and educational levels. You could
     pop off values off the queue until it matched a given string

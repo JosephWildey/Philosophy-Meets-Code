@@ -9,7 +9,6 @@ Since only a being lesser than God would attempt to deceive him into believing G
 Also, for funsies capitalize "God" or "Me." */
 exist(me).
 exist(god).
-human(me).
 think(me).
 perfectBeingExists(god).
 conceptOfPerfect(god).
@@ -18,6 +17,6 @@ exist(me):- think(me).
 /* If I am a human then something greater than me must have created me, and since humans are not perfect
 and a deceptive higher being would still be imperfect, the concept of perfection must have come from
 God if it exists. Therefore God must exist. */
-exist(god):- human(me), conceptOfPerfect(god).
+exist(god):- conceptOfPerfect(god).
 /*If God exists then we must reason that a perfect being exists, because that is the definition of God. */
 perfectBeingExists(god):- exist(god).

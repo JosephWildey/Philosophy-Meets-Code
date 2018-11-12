@@ -29,6 +29,7 @@ class Bentham {
 };
 
 //Mill's contribution to Bentham's work
+//Extending Bentham means I can illustrate that while saving work
 class Mill extends Bentham {
     /*This class would probably require a queue or
     BST to store hobbies and educational levels. You could

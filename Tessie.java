@@ -6,13 +6,37 @@ public class Tessie {
         /*For now all I'm doing is setting myself up to take in user information. */
         Scanner dimensionInput = new Scanner(System.in);
         Scanner tessieStringInput = new Scanner(System.in);
-        int dimensions;
+        Scanner rotationInput = new Scanner(System.in);
+        int dimensions, rotationDegree;
         String tessieString;
 
         /*Just basic user input and output stuff. */
         System.out.print("What is the size of the square? ");
         dimensions = dimensionInput.nextInt();
         dimensionInput.close();
+
+        System.out.println();
+
+        System.out.print("What is the degree of rotation? ");
+        rotationDegree = rotationInput.nextInt();
+        rotationInput.close();
+
+
+        /* If the user puts in a rotation greater than 360 degrees,
+        we'll just subtract 360 degrees from it until it's no longer
+        greater than 360 degrees.*/
+        if(rotationDegree > 360 && rotationDegree%90 == 0) {
+            while(rotationDegree > 360 && rotationDegree%90 == 0) {
+                rotationDegree -= 360;
+            }
+        }
+
+        /*This will catch potential user error before it messes things up. */
+        if(rotationDegree%90 != 0) {
+            System.out.print("Please input the degree again, as a multiple of 90: ");
+            rotationDegree = rotationInput.nextInt();
+            rotationInput.close();
+        }
 
         System.out.print("What are the characters we're working with? ");
         tessieString = tessieStringInput.nextLine();

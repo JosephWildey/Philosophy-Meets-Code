@@ -56,6 +56,37 @@ public class Tessie {
             }
         }
 
+        /*This is faster than an if-statement and since there are
+        few specific options it'll work perfectly. I'll probably
+        end up handling the 270 degree rotation differently,
+        with its own function to ensure accuracy. No matter what
+        I do though the 270 rotation won't be pretty.*/
+        switch(rotationDegree) {
+        case 0:
+            //output array as is
+            break;
+        case -270:
+            rotneg180();
+            rotneg90();
+            break;
+        case -180:
+            rotneg180();
+            break;
+        case -90:
+            rotneg90();
+            break;
+        case 90:
+            rotpos90();
+            break;
+        case 180:
+            rotpos180();
+            break;
+        case 270:
+            rotpos180();
+            rotpos90();
+            break;
+        }
+
 
     }
 

@@ -1,23 +1,47 @@
-//My answer for the Tessellation and Tilings Reddit challenge, when I get around to it.
+import java.util.Scanner; // Gotta take in user input
 
-public Class Tessie {
+public class Tessie {
 
-    /*First I will take in the dimensions. The instructions state to assume
+    public static void main(String args[]) {
+        /*For now all I'm doing is setting myself up to take in user information. */
+        Scanner dimensionInput = new Scanner(System.in);
+        Scanner tessieStringInput = new Scanner(System.in);
+        int dimensions;
+        String tessieString;
+
+        /*Just basic user input and output stuff. */
+        System.out.print("What is the size of the square? ");
+        dimensions = dimensionInput.nextInt();
+        dimensionInput.close();
+
+        System.out.print("What are the characters we're working with? ");
+        tessieString = tessieStringInput.nextLine();
+        tessieStringInput.close();
+
+        /*Initializing a character array to break down the string.*/
+        char[][] tessieArray = new char[dimensions][dimensions];
+    }
+
+    public static void rotpos90() {}
+
+    public static void rotpos180() {}
+
+    public static void rotneg90() {}
+
+    public static void rotneg180() {}
+
+    /*First we will take in the dimensions. The instructions state to assume
     the structure we are working with is a square. Therefore, we'll just ask
     for one number and assume both dimensions are that number.*/
 
-    /*Second I will take in the god awful string of characters and praise Cthulhu.
+    /*Second we will take in the god awful string of characters and praise Cthulhu.
     Since we can iterate through strings we will based on the number given to us.*/
 
-    /*Third, even though the instructions mention four possible rotations: -90, 0, 90, 180,
-    I will attempt to include every possible rotation from -270 to 270 in increments of 90. 
-    -270, -180, -90, 0, 90, 180, 270. Since any rotation equal to 360 is also equal to 0, and any rotation greater 
-    than 360 would still ultimately end up being 90, 180, or a combination thereof, positive or negative, 
-    this would consider every possible rotation. I'll probably still use a switch case and
-    do the math before passing it into the switch case.*/
+    /*Third we will use a switch case for rotation because there are four possible
+    rotations according to the instructions. No need to include Satan worship. However,
+    ultimately all this will do is alter how we iterate through the array. Usually,
+    you just go left to right, but we'll gown down-up, left-right, and stuff too.*/
 
     /* Should be easy. However, this is a WIP. I work two jobs now (one FT, one PT).
     Give me a few days. Code is easier than it looks, far easier. */
-    
-    /* I'll put it in the GRCC Programming Club repo once I know it works. */
 }

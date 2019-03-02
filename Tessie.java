@@ -21,6 +21,10 @@ public class Tessie {
         rotationDegree = rotationInput.nextInt();
         rotationInput.close();
 
+        //We'll treat 360 degree rotations and 0 degree rotations the same.
+        if(rotationDegree == 360)
+            rotationDegree -= 360;
+
 
         /* If the user puts in a rotation greater than 360 degrees,
         we'll just subtract 360 degrees from it until it's no longer

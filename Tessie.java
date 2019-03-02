@@ -18,4 +18,6 @@ public Class Tessie {
 
     /* Should be easy. However, this is a WIP. I work two jobs now (one FT, one PT).
     Give me a few days. Code is easier than it looks, far easier. */
+    
+    /* I'll put it in the GRCC Programming Club repo once I know it works. */
 }

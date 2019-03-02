@@ -11,8 +11,8 @@ public Class Tessie {
 
     /*Third, even though the instructions mention four possible rotations: -90, 0, 90, 180,
     I will attempt to include every possible rotation from -270 to 270 in increments of 90. 
-    -270, -180, -90, 0, 90, 180, 270. Since any rotation equal to or greater than 360 would
-    still ultimately end up being 90, 180, or a combination thereof, positive or negative, 
+    -270, -180, -90, 0, 90, 180, 270. Since any rotation equal to 360 is also equal to 0, and any rotation greater 
+    than 360 would still ultimately end up being 90, 180, or a combination thereof, positive or negative, 
     this would consider every possible rotation. I'll probably still use a switch case and
     do the math before parsing it into the switch case.*/
 

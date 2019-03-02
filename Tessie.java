@@ -22,6 +22,12 @@ public class Tessie {
         char[][] tessieArray = new char[dimensions][dimensions];
     }
 
+    /*Skateboarding taught me a thing or two about trig, and from what
+    I can recall a 270 degree rotation is just 90 degrees more than
+    180. My solution to the 270 is inelegant because it'll require
+    two partial rotations. However, like Jack Burton my solution
+    will be able to handle anything.*/
+
     public static void rotpos90() {}
 
     public static void rotpos180() {}

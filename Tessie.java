@@ -44,6 +44,19 @@ public class Tessie {
 
         /*Initializing a character array to break down the string.*/
         char[][] tessieArray = new char[dimensions][dimensions];
+
+        /*Now for the fun part, take a 1 dimension object and turn it into
+        a 2 dimension array. Due to the looping required this will not be pretty.
+        Seriously, don't do this at home. It's ugly.*/
+        for(int i = 0; i < tessieString.length(); ++i) {
+            for(int j = 0; j < dimensions; ++j) {
+                for(int k = 0; k < dimensions; ++k) {
+                    tessieArray[j][k] = tessieString.charAt(i);
+                }
+            }
+        }
+
+
     }
 
     /*Skateboarding taught me a thing or two about trig, and from what

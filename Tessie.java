@@ -48,6 +48,7 @@ public class Tessie {
 
         /*Initializing a character array to break down the string.*/
         char[][] tessieArray = new char[dimensions][dimensions];
+        char[][] secondTessieArray = new char[dimensions][dimensions];
 
         /*Now for the fun part, take a 1 dimension object and turn it into
         a 2 dimension array. Due to the looping required this will not be pretty.

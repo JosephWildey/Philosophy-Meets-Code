@@ -98,19 +98,14 @@ public class Tessie {
 
     }
 
-    /*Skateboarding taught me a thing or two about trig, and from what
-    I can recall a 270 degree rotation is just 90 degrees more than
-    180. My solution to the 270 is inelegant because it'll require
-    two partial rotations. However, like Jack Burton my solution
-    will be able to handle anything.*/
+    /*Either way the end result of a 180 degree rotation, at least in this context will give the same result.
+    Therefore, we only need one function for that, and two for 90 degree rotations.*/
 
     public static void rotpos90() {}
 
-    public static void rotpos180() {}
+    public static void rot180() {}
 
     public static void rotneg90() {}
-
-    public static void rotneg180() {}
 
     /*First we will take in the dimensions. The instructions state to assume
     the structure we are working with is a square. Therefore, we'll just ask

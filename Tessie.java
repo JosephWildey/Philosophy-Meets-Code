@@ -1,5 +1,4 @@
-/*Since both arrays are independant after initialization I think I can have some extra 
-fun with this and make it run on multiple cores at once. :) */
+/*Still a WIP. May never be finished. Don't feel like working this hard. */
 
 import java.util.Scanner; // Gotta take in user input
 

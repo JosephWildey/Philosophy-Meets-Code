@@ -1,4 +1,5 @@
-/*Still a WIP. May never be finished. Don't feel like working this hard. */
+/*Still a WIP. May never be finished. Don't feel like working this hard. My initial solution
+also didn't take into account necessary character substitution. Not really worth it to me.*/
 
 import java.util.Scanner; // Gotta take in user input
 

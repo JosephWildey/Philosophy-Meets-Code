@@ -12,11 +12,14 @@ exist(god).
 think(me).
 perfectBeingExists(god).
 conceptOfPerfect(god).
+
 /*Then we set up the rule, I am a human if I exist and I think. */
 exist(me):- think(me).
+
 /* If I am a human then something greater than me must have created me, and since humans are not perfect
 and a deceptive higher being would still be imperfect, the concept of perfection must have come from
 God if it exists. Therefore God must exist. */
 exist(god):- conceptOfPerfect(god).
+
 /*If God exists then we must reason that a perfect being exists, because that is the definition of God. */
 perfectBeingExists(god):- exist(god).

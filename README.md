@@ -1,4 +1,4 @@
-# funStuf
+# Philosophy Meets Code
 This is my repository for fun algorithms. I get bored sometimes or have weird thoughts I like to follow down the rabbit hole to see where they go. Keeping the code to myself is silly, so I'm also gonna drop it here. However, keep in mind code in this repository isn't always checked for compilability, operation, or meant to be optimized. There is a good chance a program won't run or there are better alternatives. Even at the same price point. Worrying about being as efficient as possible would destroy the point of this repository anyway. Instead of recommending optimizations take this code as a basis for new ideas. Implement it under the rules of GPL 3.0. Use it to teach or just laugh along with me. I don't car.
 
 Lastly, I try to be liberal with my comments but if there are questions please ask.
